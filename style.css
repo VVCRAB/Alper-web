@@ -1,0 +1,88 @@
+:root {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; 
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f7f7fb;
+    color: #111;
+    }
+
+header {
+    width: 100%;
+    max-width: 100%;
+    }
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #f0f1f3;
+    padding: 1rem 8rem;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+.navigation ul { 
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    }
+
+.navigation a { 
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    transition: color 0.3s;
+    }
+
+.navigation a.btn {
+    background-color: #0070f3;
+    color: #fff;
+    padding: 15px 1.25rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+    }
+
+.navigation a.active {
+  color: #0070f3;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    }
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #666;
+    font-size: 0.9rem;
+    }
+
+
+
+.navigation a:hover {
+    color: #0070f3;
+    }
+
+.navigation a.btn:hover {
+    background-color: #005bc1;
+    color: #fff;
+}
