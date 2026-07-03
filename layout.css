@@ -1,0 +1,261 @@
+/* header styling */
+header {
+    width: 100%;
+    max-width: 100%;
+    }
+
+.site-header.scrolled {
+  padding: 0.5rem 5rem;
+}
+
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: .75rem;
+    background: var(--header-bg);
+    padding: 1rem 6rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: padding 0.3s ease;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    display: block;
+    transition: font-size 0.3s ease;
+}
+
+.navigation ul { 
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    }
+
+.navigation a { 
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: color 0.3s, font-size 0.3s ease;
+    }
+
+.navigation a.btn {
+    background-color: var(--accent);
+    color: #fff;
+    padding: 15px 1.25rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+    }
+
+.navigation a.active {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+}
+
+/* Footer */
+.site-footer {
+  width: 100%;
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  margin-top: 3rem;
+}
+
+.footer-top {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  padding: 3.5rem 2rem 2.5rem;
+}
+
+.footer-brand {
+  max-width: 320px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  text-align: right;
+}
+
+@media (max-width: 540px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.footer-logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-tagline {
+  margin-top: 0.75rem;
+  color: var(--footer-muted);
+  font-size: 0.9rem;
+  max-width: 32ch;
+}
+
+.footer-contact {
+  list-style: none;
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-contact a {
+  color: var(--footer-text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+  color: var(--accent);
+}
+
+.footer-col h3 {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--footer-muted);
+  margin-bottom: 1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-col a {
+  color: var(--footer-text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer-col a:hover {
+  color: var(--accent);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--footer-border);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font: inherit;
+}
+
+.newsletter-form input::placeholder {
+  color: var(--footer-muted);
+}
+
+.newsletter-form button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.1rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: var(--accent-dark);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--footer-border);
+  padding: 1.25rem 2rem;
+}
+
+.footer-bottom-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-legal {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.footer-legal a {
+  color: var(--footer-muted);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.footer-legal a:hover {
+  color: var(--accent);
+}
+
+.footer-bottom p {
+  color: var(--footer-muted);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 540px) {
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Hover effects */
+.navigation a:hover {
+    color: var(--accent);
+    }
+
+.navigation a.btn:hover {
+    background-color: var(--accent-dark);
+    color: #fff;
+}
+
+.footer-col a:hover {
+  color: var(--accent);
+}
