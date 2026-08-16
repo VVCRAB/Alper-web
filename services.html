@@ -1,77 +1,312 @@
 <!doctype html>
 <html lang="en">
-	<head>
-        <script src="script.js" defer></script>
-		<link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="layout.css" />
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Alper Web</title>
-		<meta name="description" content="General HTML starter page" />
-	</head>
-	<body>
-		<header class="site-header">
-			<!-- Logo -->
-			<div class="logo">
-				<a href="index.html">
-					<img src="images/placeholder.png" alt="Alper Logo" />
-				</a>
-			</div>	
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Alper Power Services — Electrical installation, maintenance, generators, power systems, and safety inspections in the Dominican Republic." />
+    <title>Our Services — Alper Power Services</title>
+</head>
+<body>
 
-			<!-- Navigation -->
-			<nav class="navigation">
-				<ul>
-					<li><a href="about.html">About</a></li>
-					<li><a class="active">Services</a></li>
-					<li><a href="contact.html" class="btn">Contact Us</a></li>
-				</ul>
-            </nav>
-		</header>
+    <!-- YOUR EXISTING HEADER -->
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/placeholder.png" alt="Alper Logo" />
+            </a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li class="has-dropdown">
+                    <a href="services.html" class="active">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="services.html#installation">Electrical Installation &amp; Maintenance</a></li>
+                        <li><a href="services.html#generators">Power Systems &amp; Generators</a></li>
+                        <li><a href="services.html#contracting">General Electrical Contracting</a></li>
+                        <li><a href="services.html#inspection">Safety Inspections &amp; Testing</a></li>
+                        <li><a href="services.html#panels">Panel Upgrades &amp; Switchgear</a></li>
+                        <li><a href="services.html#ups">UPS &amp; Backup Power</a></li>
+                        <li><a href="services.html#grounding">Grounding &amp; Lightning Protection</a></li>
+                        <li><a href="services.html#lighting">Industrial Lighting Systems</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html" class="btn">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-		<main>
-			<!-- Add your content here -->
-		</main>
-        <footer class="site-footer">
-            <div class="footer-top">
-                <div class="footer-brand">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <p class="hero-eyebrow">What We Do</p>
+            <h1>Our Services</h1>
+            <p class="hero-sub">From electrical installation and preventive maintenance to backup power and safety inspections — Alper Power Services covers every part of your electrical infrastructure.</p>
+        </div>
+    </section>
+
+
+    <!-- SERVICES QUICK LIST -->
+    <section class="services-list-strip">
+        <div class="services-list-inner">
+            <p class="services-list-label">Our services include:</p>
+            <ul class="services-quick-list">
+                <li><a href="#installation">Electrical Installation &amp; Maintenance</a></li>
+                <li><a href="#generators">Power Systems &amp; Generators</a></li>
+                <li><a href="#contracting">General Electrical Contracting</a></li>
+                <li><a href="#inspection">Safety Inspections &amp; Testing</a></li>
+                <li><a href="#panels">Panel Upgrades &amp; Switchgear</a></li>
+                <li><a href="#ups">UPS &amp; Backup Power</a></li>
+                <li><a href="#grounding">Grounding &amp; Lightning Protection</a></li>
+                <li><a href="#lighting">Industrial Lighting Systems</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- SERVICE 1: ELECTRICAL INSTALLATION & MAINTENANCE -->
+    <section class="service-detail" id="installation">
+        <div class="service-detail-inner">
+            <div class="service-detail-img">
+                <img src="images/placeholder.png" alt="Electrical installation and maintenance work" />
+            </div>
+            <div class="service-detail-text">
+                <p class="split-eyebrow">Installation &amp; Maintenance</p>
+                <h2>Electrical Installation &amp; Maintenance</h2>
+                <p>We handle full-scope electrical installation for commercial and industrial facilities — from initial design and planning through final commissioning. Every installation is carried out by our licensed technicians to the highest safety and quality standards.</p>
+                <p>Our preventive maintenance programs are designed to catch issues before they become costly problems. We build customized maintenance schedules around your operations so work never disrupts your business. After every service, systems are thoroughly tested to ensure everything performs at full capacity.</p>
+                <ul class="service-bullets">
+                    <li>New electrical system installation</li>
+                    <li>Wiring, conduit, and distribution systems</li>
+                    <li>Scheduled preventive maintenance programs</li>
+                    <li>Emergency repair and rapid response</li>
+                    <li>Post-service testing and commissioning</li>
+                </ul>
+                <a href="contact.html" class="cta-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICE 2: POWER SYSTEMS & GENERATORS -->
+    <section class="service-detail service-detail--alt" id="generators">
+        <div class="service-detail-inner reverse">
+            <div class="service-detail-img">
+                <img src="images/placeholder.png" alt="Generator and backup power system installation" />
+            </div>
+            <div class="service-detail-text">
+                <p class="split-eyebrow">Power Systems &amp; Generators</p>
+                <h2>Power Systems &amp; Generators</h2>
+                <p>Unplanned power loss is one of the most damaging events a business can face. Our team installs, tests, and maintains backup generator systems and UPS solutions engineered specifically for your facility's power demands — so you're never left in the dark.</p>
+                <p>We work with generators of all sizes, from small commercial units to large-scale industrial systems. Our technicians perform thorough load testing and preventive maintenance to ensure your backup power is ready the moment it's needed.</p>
+                <ul class="service-bullets">
+                    <li>Generator installation and commissioning</li>
+                    <li>Load testing and performance verification</li>
+                    <li>UPS and battery backup systems</li>
+                    <li>Generator repair and overhaul</li>
+                    <li>Automatic transfer switch (ATS) installation</li>
+                    <li>Ongoing maintenance contracts</li>
+                </ul>
+                <a href="contact.html" class="cta-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICE 3: GENERAL ELECTRICAL CONTRACTING -->
+    <section class="service-detail" id="contracting">
+        <div class="service-detail-inner">
+            <div class="service-detail-img">
+                <img src="images/placeholder.png" alt="Electrical contracting on a commercial project" />
+            </div>
+            <div class="service-detail-text">
+                <p class="split-eyebrow">General Contracting</p>
+                <h2>General Electrical Contracting</h2>
+                <p>We provide end-to-end electrical contracting for commercial and industrial projects of any scale. From the planning stage through final inspection, our team manages every phase of the electrical scope — coordinating with architects, engineers, and general contractors to keep your project on time and on budget.</p>
+                <p>Our track record across the Dominican Republic includes office buildings, warehouses, retail spaces, industrial plants, and hospitality facilities. Whatever the project size, we bring the same commitment to quality and safety.</p>
+                <ul class="service-bullets">
+                    <li>Commercial and industrial electrical builds</li>
+                    <li>Design-build and design-assist services</li>
+                    <li>Project management and coordination</li>
+                    <li>Tenant improvement and renovation work</li>
+                    <li>Final inspection and code compliance</li>
+                </ul>
+                <a href="contact.html" class="cta-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICE 4: SAFETY INSPECTIONS & TESTING -->
+    <section class="service-detail service-detail--alt" id="inspection">
+        <div class="service-detail-inner reverse">
+            <div class="service-detail-img">
+                <img src="images/placeholder.png" alt="Safety inspection and electrical testing" />
+            </div>
+            <div class="service-detail-text">
+                <p class="split-eyebrow">Safety &amp; Compliance</p>
+                <h2>Safety Inspections &amp; Testing</h2>
+                <p>Keeping your electrical systems safe and compliant is not optional — it protects your people, your equipment, and your business. Our licensed inspectors conduct thorough safety assessments and diagnostic testing across your entire electrical infrastructure.</p>
+                <p>We test to OSHA and local regulatory standards and provide detailed reports with clear findings and recommended actions. We also offer arc flash analysis, grounding system testing, and thermographic scanning to identify hidden issues before they become hazards.</p>
+                <ul class="service-bullets">
+                    <li>Full facility electrical safety audits</li>
+                    <li>Arc flash analysis and labeling</li>
+                    <li>Grounding and bonding system testing</li>
+                    <li>Thermographic (infrared) scanning</li>
+                    <li>Switchgear and circuit breaker testing</li>
+                    <li>Detailed inspection reports and action plans</li>
+                </ul>
+                <a href="contact.html" class="cta-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICE 5: PANEL UPGRADES & SWITCHGEAR -->
+    <section class="service-detail" id="panels">
+        <div class="service-detail-inner">
+            <div class="service-detail-img">
+                <img src="images/placeholder.png" alt="Panel upgrade and switchgear work" />
+            </div>
+            <div class="service-detail-text">
+                <p class="split-eyebrow">Power Distribution</p>
+                <h2>Panel Upgrades &amp; Switchgear</h2>
+                <p>Outdated panels and switchgear are a safety risk and a bottleneck to your operations. We assess your current distribution equipment, recommend upgrades, and carry out the work with minimal disruption to your facility.</p>
+                <p>We handle everything from residential panel upgrades to medium-voltage switchgear for large industrial facilities — including retrofits when a full replacement isn't necessary.</p>
+                <ul class="service-bullets">
+                    <li>Panel and distribution board upgrades</li>
+                    <li>Low and medium voltage switchgear</li>
+                    <li>Circuit breaker rebuilds and retrofits</li>
+                    <li>Transfer switch installation</li>
+                </ul>
+                <a href="contact.html" class="cta-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICE 6: UPS & BACKUP POWER -->
+    <section class="service-detail service-detail--alt" id="ups">
+        <div class="service-detail-inner reverse">
+            <div class="service-detail-img">
+                <img src="images/placeholder.png" alt="UPS and backup power systems" />
+            </div>
+            <div class="service-detail-text">
+                <p class="split-eyebrow">Backup Power</p>
+                <h2>UPS &amp; Backup Power Systems</h2>
+                <p>Uninterruptible power supplies protect your critical equipment from power surges, sags, and outages. We size, install, and maintain UPS systems for server rooms, healthcare equipment, industrial control systems, and more.</p>
+                <ul class="service-bullets">
+                    <li>UPS system sizing and selection</li>
+                    <li>Installation and commissioning</li>
+                    <li>Battery replacement and maintenance</li>
+                    <li>Integration with generator systems</li>
+                </ul>
+                <a href="contact.html" class="cta-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICE 7: GROUNDING & LIGHTNING PROTECTION -->
+    <section class="service-detail" id="grounding">
+        <div class="service-detail-inner">
+            <div class="service-detail-img">
+                <img src="images/placeholder.png" alt="Grounding and lightning protection system" />
+            </div>
+            <div class="service-detail-text">
+                <p class="split-eyebrow">Protection Systems</p>
+                <h2>Grounding &amp; Lightning Protection</h2>
+                <p>In the Dominican Republic, lightning strikes and grounding failures are among the most common causes of electrical equipment damage. A proper grounding and lightning protection system is essential — not just for compliance, but for the long-term health of your infrastructure.</p>
+                <p>We design, install, and test grounding systems and lightning protection solutions tailored to your facility's layout and risk profile.</p>
+                <ul class="service-bullets">
+                    <li>Grounding system design and installation</li>
+                    <li>Ground resistance testing</li>
+                    <li>Lightning rod and surge protection systems</li>
+                    <li>Bonding and equipotential systems</li>
+                </ul>
+                <a href="contact.html" class="cta-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICE 8: INDUSTRIAL LIGHTING -->
+    <section class="service-detail service-detail--alt" id="lighting">
+        <div class="service-detail-inner reverse">
+            <div class="service-detail-img">
+                <img src="images/placeholder.png" alt="Industrial lighting system installation" />
+            </div>
+            <div class="service-detail-text">
+                <p class="split-eyebrow">Lighting</p>
+                <h2>Industrial Lighting Systems</h2>
+                <p>Proper lighting is critical for safety, productivity, and energy efficiency in commercial and industrial environments. We design and install lighting systems for warehouses, manufacturing floors, parking areas, and outdoor facilities — with a focus on energy-efficient LED solutions that reduce your operating costs.</p>
+                <ul class="service-bullets">
+                    <li>Industrial and commercial LED lighting</li>
+                    <li>Lighting design and layout planning</li>
+                    <li>Retrofit of existing lighting systems</li>
+                    <li>Outdoor and security lighting</li>
+                    <li>Lighting controls and dimming systems</li>
+                </ul>
+                <a href="contact.html" class="cta-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+        <div class="cta-banner-inner">
+            <h2>Not Sure Where to Start?</h2>
+            <p>Connect with one of our experts and we'll help you figure out exactly what your facility needs.</p>
+            <a href="contact.html" class="cta-primary">Contact Us Today</a>
+        </div>
+    </section>
+
+
+    <!-- YOUR EXISTING FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
                 <a href="index.html" class="footer-logo">Alper</a>
-                <p class="footer-tagline">Building thoughtful, fast websites — one project at a time.</p>
+                <p class="footer-tagline">Reliable electrical solutions for your business.</p>
                 <ul class="footer-contact">
                     <li><a href="mailto:alperpowerservices@gmail.com">alperpowerservices@gmail.com</a></li>
                     <li><a href="tel:+18095551234">+1 (809) 555-1234</a></li>
                 </ul>
-                </div>
-
-                <div class="footer-right">
-                    <div class="footer-col">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="work.html">Work</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col footer-newsletter">
-                        <h3>Sign up for updates</h3>
-                        <form class="newsletter-form">
-                            <input type="email" placeholder="Enter your email" required>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                </div>
             </div>
-
-            <div class="footer-bottom">
-                <div class="footer-bottom-inner">
-                    <ul class="footer-legal">
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
+            <div class="footer-right">
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
-                    <p>&copy; 2026 Alper. All rights reserved.</p>
+                </div>
+                <div class="footer-col footer-newsletter">
+                    <h3>Sign up for updates</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
-        </footer>
-	</body>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <ul class="footer-legal">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+                <p>&copy; <span id="year"></span> Alper Power Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>

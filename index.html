@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="layout.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alper Power Services — Reliable Electrical Solutions</title>
+    <title>Alper Power Services</title>
 </head>
 <body>
 
+    <!-- HEADER -->
     <header class="site-header">
         <div class="logo">
             <a href="index.html">
@@ -19,14 +20,27 @@
         <nav class="navigation">
             <ul>
                 <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li class="has-dropdown">
+                    <a href="services.html">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="services.html#installation">Electrical Installation &amp; Maintenance</a></li>
+                        <li><a href="services.html#generators">Power Systems &amp; Generators</a></li>
+                        <li><a href="services.html#contracting">General Electrical Contracting</a></li>
+                        <li><a href="services.html#inspection">Safety Inspections &amp; Testing</a></li>
+                        <li><a href="services.html#panels">Panel Upgrades &amp; Switchgear</a></li>
+                        <li><a href="services.html#ups">UPS &amp; Backup Power</a></li>
+                        <li><a href="services.html#grounding">Grounding &amp; Lightning Protection</a></li>
+                        <li><a href="services.html#lighting">Industrial Lighting Systems</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html" class="btn">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero -->
+
     <section class="hero">
+        <div class="hero-bg-overlay"></div>
         <div class="hero-inner">
             <p class="hero-eyebrow">Trusted Electrical Experts in the Dominican Republic</p>
             <h1>Powering Your Business With Reliable Electrical Solutions</h1>
@@ -35,82 +49,196 @@
                 <a href="contact.html" class="cta-primary">Get in Touch</a>
                 <a href="services.html" class="cta-secondary">Our Services</a>
             </div>
+            <a href="https://www.youtube.com/watch?v=YOURVIDEOID" class="hero-video-link" target="_blank" rel="noopener">
+                <span class="play-btn" aria-label="Watch our video">&#9654;</span>
+                <span>Learn More About Us</span>
+            </a>
         </div>
-        <div class="hero-overlay"></div>
     </section>
 
-    <!-- Service Cards -->
-    <section class="services-strip">
-        <div class="services-strip-inner">
-            <div class="service-card">
-                <div class="service-icon">⚡</div>
-                <h3>Electrical Installation & Maintenance</h3>
-                <p>Full-scope electrical installation and preventive maintenance programs designed to keep your facility running without interruption.</p>
-                <a href="services.html">Learn more →</a>
+
+    <section class="icon-strip">
+        <div class="icon-strip-inner">
+            <div class="icon-strip-item">
+                <img src="images/placeholder.png" alt="" class="strip-img" />
+                <p>Installation &amp; Maintenance</p>
             </div>
-            <div class="service-card">
-                <div class="service-icon">🔋</div>
-                <h3>Power Systems & Generators</h3>
-                <p>Installation, repair, and testing of power systems and backup generators so your business is never left in the dark.</p>
-                <a href="services.html">Learn more →</a>
+            <div class="icon-strip-item">
+                <img src="images/placeholder.png" alt="" class="strip-img" />
+                <p>Repair &amp; Rebuild</p>
             </div>
-            <div class="service-card">
-                <div class="service-icon">🏗️</div>
-                <h3>General Electrical Contracting</h3>
-                <p>Reliable contracting services for commercial and industrial projects of any scale, from planning to final inspection.</p>
-                <a href="services.html">Learn more →</a>
+            <div class="icon-strip-item">
+                <img src="images/placeholder.png" alt="" class="strip-img" />
+                <p>Power Systems &amp; Generators</p>
             </div>
         </div>
     </section>
 
-    <!-- About / Why Us -->
-    <section class="about-split">
-        <div class="about-split-inner">
-            <div class="about-text">
-                <p class="section-eyebrow">Why Alper Power Services</p>
-                <h2>Experience You Can Count On, Service You Can Trust</h2>
-                <p>We've built our reputation in the Dominican Republic by doing the job right the first time. Our licensed technicians bring deep expertise in electrical systems for commercial, industrial, and residential clients — combining hands-on know-how with modern diagnostic tools.</p>
-                <p>Whether it's a routine maintenance check or a complex power system installation, we treat every project with the same commitment to quality, safety, and reliability.</p>
-                <a href="about.html" class="cta-primary">Our Story</a>
+
+    <section class="split-section">
+        <div class="split-inner">
+            <div class="split-text">
+                <p class="split-eyebrow">Stay Ahead of Issues</p>
+                <h2>Preventive Maintenance &amp; Testing</h2>
+                <p>Our preventive maintenance programs are designed to catch and fix issues before they become costly problems. Using modern diagnostic tools and deep expertise, we help extend the life of your electrical equipment and avoid unplanned downtime.</p>
+                <p>After every service, we test your systems thoroughly to ensure everything is running at full capacity.</p>
+                <a href="services.html#maintenance" class="cta-primary">Learn More</a>
             </div>
-            <div class="about-image">
-                <!-- Replace with a real photo of your team or work -->
-                <div class="image-placeholder">Photo of team / work site</div>
+            <div class="split-photos">
+                <img src="images/placeholder.png" alt="Technician on site" class="photo photo-tall" />
             </div>
         </div>
     </section>
 
-    <!-- Stats Bar -->
-    <section class="stats-bar">
-        <div class="stats-inner">
-            <div class="stat">
-                <span class="stat-number">10+</span>
-                <span class="stat-label">Years of Experience</span>
+
+    <section class="split-section split-section--alt">
+        <div class="split-inner">
+            <div class="split-photos">
+                <img src="images/placeholder.png" alt="Repair work" class="photo photo-full" />
             </div>
-            <div class="stat">
-                <span class="stat-number">200+</span>
-                <span class="stat-label">Projects Completed</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">50+</span>
-                <span class="stat-label">Clients Served</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">24/7</span>
-                <span class="stat-label">Emergency Support</span>
+            <div class="split-text">
+                <p class="split-eyebrow">Repair &amp; Rebuild</p>
+                <h2>Electrical Repair &amp; System Rebuild</h2>
+                <p>Our repair work isn't just about getting systems back online — it's about making them run better and last longer. High-quality components and skilled craftsmanship set us apart.</p>
+                <p>We handle generator repair, panel upgrades, switchgear, and full system rebuilds for commercial and industrial clients.</p>
+                <a href="services.html#repair" class="cta-primary">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Bottom CTA Banner -->
+
+    <section class="split-section">
+        <div class="split-inner">
+            <div class="split-text">
+                <p class="split-eyebrow">Power Systems &amp; Generators</p>
+                <h2>Backup Power You Can Count On</h2>
+                <p>Need a reliable generator solution fast, or planning for long-term backup power? We install, test, and maintain generators and UPS systems for any scale of operation — from small businesses to large industrial facilities.</p>
+                <a href="services.html#generators" class="cta-primary">Learn More</a>
+            </div>
+            <div class="split-photos">
+                <img src="images/placeholder.png" alt="Generator and power system" class="photo photo-full" />
+            </div>
+        </div>
+    </section>
+
+
+    <section class="repair-list-section">
+        <div class="repair-list-inner">
+            <div class="repair-list-heading">
+                <h2>Full-Scope Electrical Services</h2>
+                <p>We go beyond standard electrical work to cover the full range of power infrastructure your business depends on.</p>
+            </div>
+            <div class="repair-list-grid">
+                <a href="services.html#panels" class="repair-item">
+                    <span>Panel Upgrades &amp; Switchgear</span>
+                    <span class="repair-arrow">&#8594;</span>
+                </a>
+                <a href="services.html#generators" class="repair-item">
+                    <span>Generator Install &amp; Testing</span>
+                    <span class="repair-arrow">&#8594;</span>
+                </a>
+                <a href="services.html#ups" class="repair-item">
+                    <span>UPS &amp; Backup Power Systems</span>
+                    <span class="repair-arrow">&#8594;</span>
+                </a>
+                <a href="services.html#lighting" class="repair-item">
+                    <span>Industrial Lighting Systems</span>
+                    <span class="repair-arrow">&#8594;</span>
+                </a>
+                <a href="services.html#grounding" class="repair-item">
+                    <span>Grounding &amp; Lightning Protection</span>
+                    <span class="repair-arrow">&#8594;</span>
+                </a>
+                <a href="contact.html" class="repair-item repair-item--highlight">
+                    <span>Connect With an Expert</span>
+                    <span class="repair-arrow">&#8594;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="markets-section">
+        <div class="markets-inner">
+            <p class="section-eyebrow">Industries</p>
+            <h2>Markets We Serve</h2>
+            <div class="markets-grid">
+                <div class="market-item">
+                    <img src="images/placeholder.png" alt="Commercial Buildings" class="market-img" />
+                    <span>Commercial Buildings</span>
+                </div>
+                <div class="market-item">
+                    <img src="images/placeholder.png" alt="Industrial Plants" class="market-img" />
+                    <span>Industrial Plants</span>
+                </div>
+                <div class="market-item">
+                    <img src="images/placeholder.png" alt="Healthcare Facilities" class="market-img" />
+                    <span>Healthcare Facilities</span>
+                </div>
+                <div class="market-item">
+                    <img src="images/placeholder.png" alt="Hotels and Hospitality" class="market-img" />
+                    <span>Hotels &amp; Hospitality</span>
+                </div>
+                <div class="market-item">
+                    <img src="images/placeholder.png" alt="Water and Utilities" class="market-img" />
+                    <span>Water &amp; Utilities</span>
+                </div>
+                <div class="market-item">
+                    <img src="images/placeholder.png" alt="Construction and Real Estate" class="market-img" />
+                    <span>Construction &amp; Real Estate</span>
+                </div>
+                <div class="market-item">
+                    <img src="images/placeholder.png" alt="Education" class="market-img" />
+                    <span>Education</span>
+                </div>
+                <div class="market-item">
+                    <img src="images/placeholder.png" alt="Retail and Logistics" class="market-img" />
+                    <span>Retail &amp; Logistics</span>
+                </div>
+            </div>
+            <div class="markets-bottom">
+                <div class="markets-cta-text">
+                    <h3>Your Partners in Reliability</h3>
+                    <p>Our team doesn't just provide services — we offer real solutions. From selecting the right equipment to engineering a tailored plan for your operations, we work side by side with you to boost reliability and efficiency.</p>
+                    <a href="services.html" class="cta-primary">Learn More</a>
+                </div>
+                <img src="images/placeholder.png" alt="Team on site" class="markets-photo" />
+            </div>
+        </div>
+    </section>
+
+
+    <section class="certs-section">
+        <div class="certs-inner">
+            <p class="section-eyebrow">Trusted &amp; Certified</p>
+            <div class="certs-grid">
+                <div class="cert-item">
+                    <img src="images/placeholder.png" alt="Licensed Electrical Contractors" class="cert-img" />
+                    <span>Licensed Electrical Contractors</span>
+                </div>
+                <div class="cert-item">
+                    <img src="images/placeholder.png" alt="OSHA Safety Compliant" class="cert-img" />
+                    <span>Safety Compliant (OSHA Standards)</span>
+                </div>
+                <div class="cert-item">
+                    <img src="images/placeholder.png" alt="Certified Generator Technicians" class="cert-img" />
+                    <span>Certified Generator Technicians</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="cta-banner">
         <div class="cta-banner-inner">
             <h2>Ready to Get Started?</h2>
-            <p>Tell us about your project and we'll get back to you within one business day.</p>
+            <p>Have a question or need service right away? Tell us about your project and we'll get back to you within one business day.</p>
             <a href="contact.html" class="cta-primary">Contact Us Today</a>
         </div>
     </section>
 
+
+    <!-- FOOTER -->
     <footer class="site-footer">
         <div class="footer-top">
             <div class="footer-brand">
@@ -146,7 +274,7 @@
                     <li><a href="privacy.html">Privacy Policy</a></li>
                     <li><a href="terms.html">Terms of Service</a></li>
                 </ul>
-                <p>&copy; 2026 Alper Power Services. All rights reserved.</p>
+                <p>&copy; <span id="year"></span> Alper Power Services. All rights reserved.</p>
             </div>
         </div>
     </footer>

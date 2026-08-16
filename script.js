@@ -57,5 +57,13 @@ if (form) {
   });
 }
 
+// Active nav link
+const navLinks = document.querySelectorAll('.navigation > ul > li > a');
+navLinks.forEach(link => {
+    if (link.pathname === window.location.pathname) {
+        link.classList.add('active');
+    }
+});
+
 // footer year
 document.getElementById('year').textContent = new Date().getFullYear();
