@@ -1,15 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="style.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Learn about Alper Power Services — our story, our team, and our commitment to reliable electrical solutions in the Dominican Republic." />
+    <meta name="description" content="Learn about Alper Power Services, our story, our team, and our commitment to reliable electrical solutions in the Dominican Republic." />
     <title>Acerca de Alper Power Services</title>
+<link rel="stylesheet" href="alper-updates.css?v=footer-balanced-5">
+<script src="stats-counter.js" defer></script>
 </head>
 <body class="about-page">
+<a class="alper-skip" href="#page-content">Saltar al contenido</a>
 
     <!-- HEADER -->
     <header class="site-header">
@@ -18,7 +21,7 @@
                 <img src="images/alper logo.png" alt="Alper Logo" />
             </a>
         </div>
-        <nav class="navigation">
+        <button class="alper-menu" type="button" aria-expanded="false" aria-controls="alper-nav"><span>Menú</span><span aria-hidden="true">☰</span></button><nav class="navigation" id="alper-nav" aria-label="Navegación principal">
             <ul>
                 <li><a href="about.html">Sobre Nosotros</a></li>
                 <li class="has-dropdown">
@@ -34,40 +37,26 @@
                         <li><a href="services.html#lighting">Sistemas de Iluminación Industrial</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html" class="btn">Póngase en Contacto</a></li>
+                
+<li><a href="contact.html" class="btn">Contáctenos</a></li>
             </ul>
         </nav>
-    </header>
+    </header><div id="page-content" tabindex="-1"></div>
 
 
-    <!-- HERO — full dark, large editorial type -->
+    <!-- HERO, full dark, large editorial type -->
     <section class="ab-hero">
         <div class="ab-hero-inner">
             <p class="ab-eyebrow reveal">Quiénes Somos</p>
-            <h1 class="ab-hero-heading reveal">Mantenemos el<br><em>República Dominicana</em><br>energizado.</h1>
-            <p class="ab-hero-sub reveal">Fundada por dos hermanos. Construida en precisión, honestidad y la creencia de que la energía confiable no es un lujo — es un derecho.</p>
+            <h1 class="ab-hero-heading reveal">Experiencia al servicio <br>de su <em>operación.</em></h1>
+            <p class="ab-hero-sub reveal">Conozca nuestra empresa y los principios que guían nuestro trabajo.</p>
         </div>
-        <div class="ab-hero-line"></div>
+        <img class="ab-hero-photo" src="images/projects/project-31.jpg" alt="Motor diésel industrial durante mantenimiento" fetchpriority="high"><div class="ab-hero-line"></div>
     </section>
 
 
     <!-- OUR STORY -->
-    <section class="ab-story" id="story">
-        <div class="ab-story-inner">
-            <div class="ab-story-label reveal">
-                <span>01</span>
-                <p>Sobre Nuestra Historia</p>
-            </div>
-            <div class="ab-story-content">
-                <h2 class="reveal">Construidos desde el principio.</h2>
-                <div class="ab-story-body">
-                    <p class="reveal">Alper Power Services fue fundada por los hermanos John Doe y Albert Doe con una convicción simple — que los negocios en la República Dominicana merecían servicios eléctricos en los que pudieran confiar genuinamente. Lo que comenzó como una pequeña operación ha crecido hasta convertirse en uno de los contratistas eléctricos más confiables en la región.</p>
-                    <p class="reveal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <img src="images/placeholder.png" alt="Alper founders on site" class="ab-story-img reveal" />
-            </div>
-        </div>
-    </section>
+    <section class="ab-story" id="story"><div class="ab-story-inner"><div class="ab-story-label"><span>01</span><p>Nuestra empresa</p></div><div class="ab-story-content"><h2>Comprometidos con su operación.</h2><div class="ab-story-body"><p>Alper Power Services brinda servicios de mantenimiento mecánico para motores diésel de media y alta potencia, a bordo de buques y en plantas de generación de energía eléctrica.</p><p>La responsabilidad, la calidad y el cuidado de los recursos guían nuestra forma de trabajar.</p></div><img src="images/projects/project-29.jpg" alt="Motor diésel durante una intervención de mantenimiento" class="ab-story-img" loading="lazy" decoding="async"></div></div></section><section class="alper-purpose" id="mission"><div class="ab-story-label"><span>02</span><p>Misión, Visión y Valores</p></div><div class="alper-purpose-grid"><article><h2>Misión</h2><p>Somos una empresa dedicada a brindar servicios de calidad, comprometido a satisfacer las necesidades de nuestros clientes en materia de mantenimiento preventivo, correctivo y predictivo de motores diésel de media y alta potencia, a bordo de buques, plantas de generación de energía eléctrica así como mantenimiento general de auxiliares relacionados.</p></article><article><h2>Visión</h2><p>Ser una empresa reconocida como marca de excelencia operacional en el ejercicio de la aplicación de mantenimiento mecánico en la industria naviera y generación de energía eléctrica en nuestra área geográfica y el caribe, apegados al fiel cumplimiento de las normas de seguridad industrial, medioambientales, y el uso racional de los recursos naturales.</p></article></div><h2>Valores</h2><ul class="alper-values"><li>Responsabilidad</li><li>Honestidad</li><li>Transparencia</li><li>Lealtad</li><li>Calidad</li></ul></section>
 
 
     <!-- STATS -->
@@ -103,58 +92,24 @@
             <h2 class="reveal">Lo que nos distingue.</h2>
             <div class="ab-why-grid">
                 <div class="ab-why-card reveal">
-                    <img src="images/placeholder.png" alt="" class="ab-why-icon" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <h3>Con Licencia y Certificación</h3>
-                    <p>All our technicians are fully licensed and certified, operating to the highest industry and local regulatory standards.</p>
+                    <p>Nuestros técnicos cuentan con licencias y certificaciones y trabajan conforme a los estándares del sector y las normas locales.</p>
                 </div>
                 <div class="ab-why-card reveal">
-                    <img src="images/placeholder.png" alt="" class="ab-why-icon" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <h3>Experto Local</h3>
-                    <p>Conocemos la infraestructura eléctrica de la República Dominicana de manera detallada — sus peculiaridades, códigos regionales y todo lo demás.</p>
+                    <p>Conocemos la infraestructura eléctrica de la República Dominicana de manera detallada, sus peculiaridades, códigos regionales y todo lo demás.</p>
                 </div>
                 <div class="ab-why-card reveal">
-                    <img src="images/placeholder.png" alt="" class="ab-why-icon" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <h3>Soporte de Emergencia 24/7</h3>
                     <p>Las emergencias eléctricas no esperan horas de trabajo. Nuestro equipo está disponible las 24 horas del día, los 7 días de la semana.</p>
                 </div>
                 <div class="ab-why-card reveal">
-                    <img src="images/placeholder.png" alt="" class="ab-why-icon" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <h3>Calidad Garantizada</h3>
-                    <p>Defendemos cada trabajo que hacemos. Si algo no está bien, lo arreglamos — sin preguntas.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- CERTIFICATIONS -->
-    <section class="ab-certs" id="certifications">
-        <div class="ab-certs-inner">
-            <div class="ab-story-label reveal">
-                <span>03</span>
-                <p>Certificaciones</p>
-            </div>
-            <h2 class="reveal">Confiable y verificado.</h2>
-            <div class="ab-certs-grid">
-                <div class="ab-cert-card reveal">
-                    <img src="images/placeholder.png" alt="" class="ab-cert-icon" />
-                    <h3>Contratista Eléctrico Autorizado</h3>
-                    <p>Certificado por el Ministerio de Energía y Minas de la República Dominicana. Licencia No. DR-ELC-00421</p>
-                </div>
-                <div class="ab-cert-card reveal">
-                    <img src="images/placeholder.png" alt="" class="ab-cert-icon" />
-                    <h3>Certificación de Seguridad de OSHA</h3>
-                    <p>Todos nuestros técnicos de campo cuentan con certificaciones OSHA 10 u OSHA 30, cumpliendo con los estándares internacionales de seguridad.</p>
-                </div>
-                <div class="ab-cert-card reveal">
-                    <img src="images/placeholder.png" alt="" class="ab-cert-icon" />
-                    <h3>Certificado de Técnico de Generadores</h3>
-                    <p>Certificados por el fabricante para la instalación y el mantenimiento de sistemas de generadores comerciales e industriales.</p>
-                </div>
-                <div class="ab-cert-card reveal">
-                    <img src="images/placeholder.png" alt="" class="ab-cert-icon" />
-                    <h3>Certificado NFPA 70E Arc Flash</h3>
-                    <p>Formación en análisis de riesgos de arco eléctrico y seguridad eléctrica según los estándares NFPA 70E.</p>
+                    <p>Defendemos cada trabajo que hacemos. Si algo no está bien, lo arreglamos, sin preguntas.</p>
                 </div>
             </div>
         </div>
@@ -170,7 +125,7 @@
                     <p>Dónde trabajamos</p>
                 </div>
                 <h2 class="reveal">Sirviendo a toda la República Dominicana</h2>
-                <p class="reveal">Operamos en todo el país, con un enfoque principal en Santo Domingo y la zona metropolitana circundante — y atendemos clientes a nivel nacional para proyectos importantes.</p>
+                <p class="reveal">Operamos en todo el país, con un enfoque principal en Santo Domingo y la zona metropolitana circundante, y atendemos clientes a nivel nacional para proyectos importantes.</p>
                 <ul class="ab-area-list">
                     <li class="reveal">Santo Domingo y el Gran Santo Domingo.</li>
                     <li class="reveal">Santiago de los Caballeros</li>
@@ -179,7 +134,7 @@
                     <li class="reveal">Cobertura nacional para proyectos de gran envergadura</li>
                 </ul>
             </div>
-            <img src="images/placeholder.png" alt="Dominican Republic service area" class="ab-area-img reveal" />
+            <img src="images/projects/project-18.jpg" alt="Equipos de generación de energía" class="ab-area-img reveal" loading="lazy" decoding="async">
         </div>
     </section>
 
@@ -189,7 +144,7 @@
         <div class="ab-cta-inner">
             <h2 class="reveal">¿Listo para trabajar juntos?</h2>
             <p class="reveal">Ponte en contacto y uno de nuestros miembros del equipo te responderá en un plazo de un día hábil.</p>
-            <a href="contact.html" class="ab-cta-btn reveal">Contáctanos</a>
+            <a href="contact.html" class="ab-cta-btn reveal">Contáctenos</a>
         </div>
     </section>
 
@@ -198,27 +153,27 @@
     <footer class="site-footer">
         <div class="footer-top">
             <div class="footer-brand">
-                <a href="index.html" class="footer-logo">Alper</a>
+                <a href="index.html" class="footer-logo"><img src="images/alper-footer-services-v2.png" alt="Alper Power Services" width="768" height="768" loading="lazy" decoding="async"></a>
                 <p class="footer-tagline">Soluciones eléctricas confiables para su negocio.</p>
                 <ul class="footer-contact">
                     <li><a href="mailto:alperpowerservices@gmail.com">alperpowerservices@gmail.com</a></li>
-                    <li><a href="tel:+18095551234">+1 (809) 555-1234</a></li>
+                    <li><a href="tel:+18094059729">+1 809 405 9729</a></li>
                 </ul>
             </div>
             <div class="footer-right">
                 <div class="footer-col">
                     <h3>Enlaces Rápidos</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-col footer-newsletter">
-                    <h3>Suscríbase para recibir actualizaciones</h3>
+                    <h3>Reciba nuestras novedades</h3>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Ingrese su correo electrónico" required>
+                        <label for="newsletter-email">Correo electrónico</label><input id="newsletter-email" type="email" name="email" autocomplete="email" placeholder="Ingrese su correo electrónico" required>
                         <button type="submit">Enviar</button>
                     </form>
                 </div>

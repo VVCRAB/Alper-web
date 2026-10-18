@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="script.js" defer></script>
@@ -8,8 +8,10 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Contact Us</title>
+<link rel="stylesheet" href="alper-updates.css?v=footer-balanced-5">
 </head>
 <body>
+<a class="alper-skip" href="#page-content">Saltar al contenido</a>
 
     <!-- HEADER -->
     <header class="site-header">
@@ -18,7 +20,7 @@
                 <img src="images/alper logo.png" alt="Alper Logo" />
             </a>
         </div>
-        <nav class="navigation">
+        <button class="alper-menu" type="button" aria-expanded="false" aria-controls="alper-nav"><span>Menú</span><span aria-hidden="true">☰</span></button><nav class="navigation" id="alper-nav" aria-label="Navegación principal">
             <ul>
                 <li><a href="about.html">Sobre Nosotros</a></li>
                 <li class="has-dropdown">
@@ -34,10 +36,11 @@
                         <li><a href="services.html#lighting">Sistemas de Iluminación Industrial</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html" class="btn">Contáctenos</a></li>
+                
+<li><a href="contact.html" class="btn">Contáctenos</a></li>
             </ul>
         </nav>
-    </header>
+    </header><div id="page-content" tabindex="-1"></div>
 
 	<main class="page-contact">
 		<h1>Contáctenos</h1>
@@ -96,11 +99,11 @@
     <footer class="site-footer">
         <div class="footer-top">
             <div class="footer-brand">
-                <a href="index.html" class="footer-logo">Alper</a>
+                <a href="index.html" class="footer-logo"><img src="images/alper-footer-services-v2.png" alt="Alper Power Services" width="768" height="768" loading="lazy" decoding="async"></a>
                 <p class="footer-tagline">Soluciones eléctricas confiables para su negocio.</p>
                 <ul class="footer-contact">
                     <li><a href="mailto:alperpowerservices@gmail.com">alperpowerservices@gmail.com</a></li>
-                    <li><a href="tel:+18095551234">+1 (809) 555-1234</a></li>
+                    <li><a href="tel:+18094059729">+1 809 405 9729</a></li>
                 </ul>
             </div>
 
@@ -116,9 +119,9 @@
                 </div>
 
                 <div class="footer-col footer-newsletter">
-                    <h3>Suscríbase para recibir actualizaciones</h3>
+                    <h3>Reciba nuestras novedades</h3>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Ingrese su correo electrónico" required>
+                        <label for="newsletter-email">Correo electrónico</label><input id="newsletter-email" type="email" name="email" autocomplete="email" placeholder="Ingrese su correo electrónico" required>
                         <button type="submit">Enviar</button>
                     </form>
                 </div>

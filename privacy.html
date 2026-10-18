@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="script.js" defer></script>
@@ -8,8 +8,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy Policy</title>
+<link rel="stylesheet" href="alper-updates.css?v=footer-balanced-5">
 </head>
 <body>
+<a class="alper-skip" href="#page-content">Saltar al contenido</a>
 
     <header class="site-header">
         <div class="logo">
@@ -18,14 +20,15 @@
             </a>
         </div>
 
-        <nav class="navigation">
+        <button class="alper-menu" type="button" aria-expanded="false" aria-controls="alper-nav"><span>Menú</span><span aria-hidden="true">☰</span></button><nav class="navigation" id="alper-nav" aria-label="Navegación principal">
             <ul>
                 <li><a href="about.html">Sobre Nosotros</a></li>
                 <li><a href="services.html">Servicios</a></li>
-                <li><a href="contact.html" class="btn">Contáctenos</a></li>
+                
+<li><a href="contact.html" class="btn">Contáctenos</a></li>
             </ul>
         </nav>
-    </header>
+    </header><div id="page-content" tabindex="-1"></div>
 
     <main class="page-legal">
         <h1>Política de Privacidad</h1>
@@ -36,8 +39,8 @@
         <h2>1. Información que recopilamos</h2>
         <p>Recopilamos información de las siguientes maneras:</p>
         <ul>
-            <li><strong>Información que usted nos proporciona directamente</strong> — cuando envía nuestro formulario de contacto, recopilamos su nombre, apellido, dirección de correo electrónico, asunto y mensaje. Si se suscribe para recibir actualizaciones, recopilamos su dirección de correo electrónico.</li>
-            <li><strong>Información recopilada automáticamente</strong> — al igual que la mayoría de los sitios web, nuestro proveedor de alojamiento y los servicios de terceros pueden registrar automáticamente datos técnicos estándar, como la dirección IP, el tipo de navegador y las páginas visitadas.</li>
+            <li><strong>Información que usted nos proporciona directamente</strong>: cuando envía nuestro formulario de contacto, recopilamos su nombre, apellido, dirección de correo electrónico, asunto y mensaje. Si se suscribe para recibir actualizaciones, recopilamos su dirección de correo electrónico.</li>
+            <li><strong>Información recopilada automáticamente</strong>: al igual que la mayoría de los sitios web, nuestro proveedor de alojamiento y los servicios de terceros pueden registrar automáticamente datos técnicos estándar, como la dirección IP, el tipo de navegador y las páginas visitadas.</li>
         </ul>
         <p>Actualmente no utilizamos herramientas de análisis ni rastreadores publicitarios. Si esto cambia en el futuro, actualizaremos esta política para explicar qué información se recopila y por qué.</p>
 
@@ -52,9 +55,9 @@
         <h2>3. Servicios de terceros que utilizamos</h2>
         <p>Para operar este sitio web, utilizamos un número limitado de servicios de terceros de confianza, cada uno de los cuales cuenta con sus propias prácticas de privacidad:</p>
         <ul>
-            <li><strong>Web3Forms</strong> — procesa y entrega los mensajes enviados a través de nuestro formulario de contacto. Consulte su <a href="https://web3forms.com/privacy" target="_blank" rel="noopener">política de privacidad</a>.</li>
-            <li><strong>hCaptcha</strong> — nos ayuda a detectar y bloquear envíos de spam. Consulte su <a href="https://www.hcaptcha.com/privacy" target="_blank" rel="noopener">política de privacidad</a>.</li>
-            <li><strong>Google Maps</strong> — se utiliza para mostrar nuestra ubicación. Consulte la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidad de Google</a>.</li>
+            <li><strong>Web3Forms</strong>: procesa y entrega los mensajes enviados a través de nuestro formulario de contacto. Consulte su <a href="https://web3forms.com/privacy" target="_blank" rel="noopener">política de privacidad</a>.</li>
+            <li><strong>hCaptcha</strong>: nos ayuda a detectar y bloquear envíos de spam. Consulte su <a href="https://www.hcaptcha.com/privacy" target="_blank" rel="noopener">política de privacidad</a>.</li>
+            <li><strong>Google Maps</strong>: se utiliza para mostrar nuestra ubicación. Consulte la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidad de Google</a>.</li>
         </ul>
 
         <h2>4. Cookies</h2>
@@ -85,11 +88,11 @@
    <footer class="site-footer">
         <div class="footer-top">
             <div class="footer-brand">
-                <a href="index.html" class="footer-logo">Alper</a>
+                <a href="index.html" class="footer-logo"><img src="images/alper-footer-services-v2.png" alt="Alper Power Services" width="768" height="768" loading="lazy" decoding="async"></a>
                 <p class="footer-tagline">Soluciones eléctricas confiables para su negocio.</p>
                 <ul class="footer-contact">
                     <li><a href="mailto:alperpowerservices@gmail.com">alperpowerservices@gmail.com</a></li>
-                    <li><a href="tel:+18095551234">+1 (809) 555-1234</a></li>
+                    <li><a href="tel:+18094059729">+1 809 405 9729</a></li>
                 </ul>
             </div>
             <div class="footer-right">
@@ -103,9 +106,9 @@
                     </ul>
                 </div>
                 <div class="footer-col footer-newsletter">
-                    <h3>Suscríbase para recibir actualizaciones</h3>
+                    <h3>Reciba nuestras novedades</h3>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Ingrese su correo electrónico" required>
+                        <label for="newsletter-email">Correo electrónico</label><input id="newsletter-email" type="email" name="email" autocomplete="email" placeholder="Ingrese su correo electrónico" required>
                         <button type="submit">Enviar</button>
                     </form>
                 </div>

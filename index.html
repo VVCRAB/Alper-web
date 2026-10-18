@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
@@ -7,8 +7,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alper Power Services</title>
+<link rel="stylesheet" href="alper-updates.css?v=footer-balanced-5">
 </head>
 <body>
+<a class="alper-skip" href="#page-content">Saltar al contenido</a>
 
     <!-- HEADER -->
     <header class="site-header">
@@ -17,7 +19,7 @@
                 <img src="images/alper logo.png" alt="Alper Logo" />
             </a>
         </div>
-        <nav class="navigation">
+        <button class="alper-menu" type="button" aria-expanded="false" aria-controls="alper-nav"><span>Menú</span><span aria-hidden="true">☰</span></button><nav class="navigation" id="alper-nav" aria-label="Navegación principal">
             <ul>
                 <li><a href="about.html">Sobre Nosotros</a></li>
                 <li class="has-dropdown">
@@ -33,10 +35,11 @@
                         <li><a href="services.html#lighting">Sistemas de Iluminación Industrial</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html" class="btn">Contáctenos</a></li>
+                
+<li><a href="contact.html" class="btn">Contáctenos</a></li>
             </ul>
         </nav>
-    </header>
+    </header><div id="page-content" tabindex="-1"></div>
 
 
     <section class="hero">
@@ -49,10 +52,7 @@
                 <a href="contact.html" class="cta-primary">Ponte en Contacto</a>
                 <a href="services.html" class="cta-secondary">Nuestros Servicios</a>
             </div>
-            <a href="https://www.youtube.com/watch?v=YOURVIDEOID" class="hero-video-link" target="_blank" rel="noopener">
-                <span class="play-btn" aria-label="Watch our video">&#9654;</span>
-                <span>Descubre Más Sobre Nosotros</span>
-            </a>
+            <a href="services.html#installation" class="hero-video-link">Conozca nuestros servicios <span aria-hidden="true">→</span></a>
         </div>
     </section>
 
@@ -60,15 +60,15 @@
     <section class="icon-strip">
         <div class="icon-strip-inner">
             <div class="icon-strip-item">
-                <img src="images/placeholder.png" alt="" class="strip-img" />
+                <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                 <p>Instalaciones y Mantenimiento</p>
             </div>
             <div class="icon-strip-item">
-                <img src="images/placeholder.png" alt="" class="strip-img" />
+                <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                 <p>Reparación y Reconstrucción</p>
             </div>
             <div class="icon-strip-item">
-                <img src="images/placeholder.png" alt="" class="strip-img" />
+                <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                 <p>Sistemas de Energía y Generadores</p>
             </div>
         </div>
@@ -82,10 +82,10 @@
                 <h2>Mantenimiento Preventivo y Pruebas</h2>
                 <p>Nuestros programas de mantenimiento preventivo están diseñados para detectar y solucionar problemas antes de que se conviertan en inconvenientes costosos. Utilizando herramientas de diagnóstico modernas y una amplia experiencia, ayudamos a prolongar la vida útil de sus equipos eléctricos y a evitar tiempos de inactividad no planificados.</p>
                 <p>Después de cada servicio, probamos minuciosamente sus sistemas para garantizar que todo funcione a plena capacidad.</p>
-                <a href="services.html#maintenance" class="cta-primary">Aprende Más</a>
+                <a href="services.html#installation" class="cta-primary">Aprende Más</a>
             </div>
             <div class="split-photos">
-                <img src="images/placeholder.png" alt="Technician on site" class="photo photo-tall" />
+                <img src="images/projects/project-05.jpg" alt="Trabajo de mantenimiento de motores y componentes Alper" class="photo photo-tall" loading="lazy" decoding="async">
             </div>
         </div>
     </section>
@@ -94,14 +94,14 @@
     <section class="split-section split-section--alt">
         <div class="split-inner">
             <div class="split-photos">
-                <img src="images/placeholder.png" alt="Repair work" class="photo photo-full" />
+                <img src="images/projects/project-12.jpg" alt="Trabajo de mantenimiento de motores y componentes Alper" class="photo photo-full" loading="lazy" decoding="async">
             </div>
             <div class="split-text">
                 <p class="split-eyebrow">Reparar y Reconstruir</p>
                 <h2>Reparación Eléctrica y Reconstrucción del Sistema</h2>
                 <p>Nuestro trabajo de reparación no se trata simplemente de volver a poner los sistemas en funcionamiento, sino de hacer que funcionen mejor y duren más. Utilizamos componentes de alta calidad y contamos con mano de obra especializada que nos distingue.</p>
                 <p>Nos encargamos de la reparación de generadores, actualización de paneles eléctricos, equipos de distribución eléctrica (switchgear) y reconstrucciones completas de sistemas para clientes comerciales e industriales.</p>
-                <a href="services.html#repair" class="cta-primary">Aprende Más</a>
+                <a href="services.html#generators" class="cta-primary">Aprende Más</a>
             </div>
         </div>
     </section>
@@ -116,7 +116,7 @@
                 <a href="services.html#generators" class="cta-primary">Aprende Más</a>
             </div>
             <div class="split-photos">
-                <img src="images/placeholder.png" alt="Generator and power system" class="photo photo-full" />
+                <img src="images/projects/project-31.jpg" alt="Trabajo de mantenimiento de motores y componentes Alper" class="photo photo-full" loading="lazy" decoding="async">
             </div>
         </div>
     </section>
@@ -164,45 +164,45 @@
             <h2>Mercados que Atendemos</h2>
             <div class="markets-grid">
                 <div class="market-item">
-                    <img src="images/placeholder.png" alt="Commercial Buildings" class="market-img" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <span>Edificios Comerciales</span>
                 </div>
                 <div class="market-item">
-                    <img src="images/placeholder.png" alt="Industrial Plants" class="market-img" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <span>Plantas Industriales</span>
                 </div>
                 <div class="market-item">
-                    <img src="images/placeholder.png" alt="Healthcare Facilities" class="market-img" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <span>Facilidades de Salud</span>
                 </div>
                 <div class="market-item">
-                    <img src="images/placeholder.png" alt="Hotels and Hospitality" class="market-img" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <span>Hoteles y hospitalidad</span>
                 </div>
                 <div class="market-item">
-                    <img src="images/placeholder.png" alt="Water and Utilities" class="market-img" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <span>Agua y Utilidades</span>
                 </div>
                 <div class="market-item">
-                    <img src="images/placeholder.png" alt="Construction and Real Estate" class="market-img" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <span>Construcción y Bienes Raíces</span>
                 </div>
                 <div class="market-item">
-                    <img src="images/placeholder.png" alt="Education" class="market-img" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <span>Educación</span>
                 </div>
                 <div class="market-item">
-                    <img src="images/placeholder.png" alt="Retail and Logistics" class="market-img" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <span>Comercio Minorista y Logística</span>
                 </div>
             </div>
             <div class="markets-bottom">
                 <div class="markets-cta-text">
                     <h3>Sus Socios en Fiabilidad</h3>
-                    <p>Nuestro equipo no solo proporciona servicios — ofrecemos soluciones reales. Desde la selección del equipo adecuado hasta la ingeniería de un plan personalizado para sus operaciones, trabajamos junto a usted para mejorar la fiabilidad y la eficiencia.</p>
+                    <p>Nuestro equipo no solo proporciona servicios; ofrecemos soluciones reales. Desde la selección del equipo adecuado hasta la ingeniería de un plan personalizado para sus operaciones, trabajamos junto a usted para mejorar la fiabilidad y la eficiencia.</p>
                     <a href="services.html" class="cta-primary">Aprenda Más</a>
                 </div>
-                <img src="images/placeholder.png" alt="Team on site" class="markets-photo" />
+                <img src="images/projects/project-18.jpg" alt="Trabajo de mantenimiento de motores y componentes Alper" class="markets-photo" loading="lazy" decoding="async">
             </div>
         </div>
     </section>
@@ -213,15 +213,15 @@
             <p class="section-eyebrow">Confiable y Certificado</p>
             <div class="certs-grid">
                 <div class="cert-item">
-                    <img src="images/placeholder.png" alt="Licensed Electrical Contractors" class="cert-img" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <span>Contratistas de Electricidad Licenciados</span>
                 </div>
                 <div class="cert-item">
-                    <img src="images/placeholder.png" alt="OSHA Safety Compliant" class="cert-img" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <span>Conforme a la Seguridad de OSHA</span>
                 </div>
                 <div class="cert-item">
-                    <img src="images/placeholder.png" alt="Certified Generator Technicians" class="cert-img" />
+                    <svg class="alper-line-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M24 4 41 13v22L24 44 7 35V13Z"/><path d="m15 24 6 6 13-14"/></svg>
                     <span>Técnicos de Generadores Certificados</span>
                 </div>
             </div>
@@ -242,11 +242,11 @@
     <footer class="site-footer">
         <div class="footer-top">
             <div class="footer-brand">
-                <a href="index.html" class="footer-logo">Alper</a>
+                <a href="index.html" class="footer-logo"><img src="images/alper-footer-services-v2.png" alt="Alper Power Services" width="768" height="768" loading="lazy" decoding="async"></a>
                 <p class="footer-tagline">Soluciones eléctricas confiables para su negocio.</p>
                 <ul class="footer-contact">
                     <li><a href="mailto:alperpowerservices@gmail.com">alperpowerservices@gmail.com</a></li>
-                    <li><a href="tel:+18095551234">+1 (809) 555-1234</a></li>
+                    <li><a href="tel:+18094059729">+1 809 405 9729</a></li>
                 </ul>
             </div>
             <div class="footer-right">
@@ -260,9 +260,9 @@
                     </ul>
                 </div>
                 <div class="footer-col footer-newsletter">
-                    <h3>Suscríbase para recibir actualizaciones</h3>
+                    <h3>Reciba nuestras novedades</h3>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Ingrese su correo electrónico" required>
+                        <label for="newsletter-email">Correo electrónico</label><input id="newsletter-email" type="email" name="email" autocomplete="email" placeholder="Ingrese su correo electrónico" required>
                         <button type="submit">Enviar</button>
                     </form>
                 </div>
